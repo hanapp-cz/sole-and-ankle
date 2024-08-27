@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styled from 'styled-components/macro';
 
 import SHOES from '../../data';
@@ -14,6 +15,10 @@ const ShoeGrid = () => {
   );
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+`;
 
 export default ShoeGrid;
