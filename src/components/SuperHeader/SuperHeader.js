@@ -1,11 +1,11 @@
 import React from 'react';
+
 import styled from 'styled-components';
 
 import { COLORS } from '../../constants';
-
+import Icon from '../Icon';
 import SearchInput from '../SearchInput';
 import UnstyledButton from '../UnstyledButton';
-import Icon from '../Icon';
 
 const SuperHeader = () => {
   return (
@@ -26,6 +26,11 @@ const Wrapper = styled.div`
   font-size: 0.875rem;
   color: ${COLORS.gray[300]};
   background-color: ${COLORS.gray[900]};
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-inline: 32px;
+  height: ${40 / 16}rem;
 `;
 
 const MarketingMessage = styled.span`
