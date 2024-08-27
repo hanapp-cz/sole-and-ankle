@@ -1,7 +1,11 @@
 import React from 'react';
+
 import styled from 'styled-components/macro';
 
-import { COLORS, WEIGHTS } from '../../constants';
+import {
+  COLORS,
+  WEIGHTS,
+} from '../../constants';
 import Logo from '../Logo';
 import SuperHeader from '../SuperHeader';
 
@@ -21,6 +25,7 @@ const Header = () => {
           <NavLink href="/kids">Kids</NavLink>
           <NavLink href="/collections">Collections</NavLink>
         </Nav>
+        <Spacer />
       </MainHeader>
     </header>
   );
@@ -29,9 +34,21 @@ const Header = () => {
 const MainHeader = styled.div`
   padding: 0 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 72px;
 `;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+  display: flex;
+  gap: 48px;
+`;
+
+const Spacer = styled.div`
+  flex: 1;
+`;
 
 const NavLink = styled.a`
   font-size: 1.125rem;

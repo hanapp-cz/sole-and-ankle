@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styled from 'styled-components/macro';
 
 import { WEIGHTS } from '../../constants';
@@ -12,6 +13,7 @@ const Logo = (props) => {
 };
 
 const Link = styled.a`
+  flex: 1;
   text-decoration: none;
   color: inherit;
 `;
